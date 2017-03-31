@@ -1,7 +1,5 @@
 # #Cloures in depth
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
-
 I have made some examples for the people who want to learn and understand the cloures in depth. I have gathered information from various resources and tried to make this easy to understand. i have also attached a **playground** so you can test the code.
 
   - what is a cloure?
@@ -278,3 +276,10 @@ Display {
 **Comming soon**
 
 
+
+
+Special thanks to these websites and Apple Programming book
+https://swiftunboxed.com/lang/closures-escaping-noescape-swift3/
+https://cocoacasts.com/what-do-escaping-and-noescaping-mean-in-swift-3/
+https://krakendev.io/blog/hipster-swift
+https://oleb.net/blog/2016/10/optional-non-escaping-closures/
