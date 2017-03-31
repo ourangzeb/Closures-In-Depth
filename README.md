@@ -1,5 +1,6 @@
 # #Cloures in depth
 
+[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 I have made some examples for the people who want to learn and understand the cloures in depth. I have gathered information from various resources and tried to make this easy to understand. i have also attached a **playground** so you can test the code.
 
@@ -273,7 +274,7 @@ Display {
 }
 
 ```
-
-
+# Autoclosures
+**Comming soon**
 
 
