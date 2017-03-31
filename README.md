@@ -1,6 +1,5 @@
 # #Cloures in depth
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 I have made some examples for the people who want to learn and understand the cloures in depth. I have gathered information from various resources and tried to make this easy to understand. i have also attached a **playground** so you can test the code.
 
@@ -234,6 +233,44 @@ OR
 array = array.sorted(by: >)
 
 
+
+```
+
+# Nonescape and Escape function
+
+*** nonscaping cloure tells the compiler to be more aggresive beacause it knows the more information about the cloure lifespan ***
+what it does mean actually?
+in swift 1 and swift 2 the cloures were escaping by default  If you knew your closure wouldn’t escape the function body, you could mark the parameter with the @noescape attribute in swift 1 or swift 2
+ in this way we had to write the [weak self] in the cloure which means when cloure is done it should release it from memory.
+
+In Swift 3, it’s the other way around: closure parameters are non-escaping by default. If you intend for it to escape the function, you have to mark it with the @escaping attribute. This means that you dont have to write the [weak self] when writing a cloure.
+
+for example we make a variable in the example below the variable escapecloure holds the cloure reference which makes it escape cloure. escape cloure can be used but you have to manage memory for them. you have to release teh variale for your self. you can also use the escape cloure on multiple places like completion handler of the web response.***
+
+```
+let escapecloure =  {
+    () -> Void in
+    print("escape cloure")
+}
+
+func Displayescapecloure(cloure: ()->()){
+    
+    cloure();
+}
+Displayescapecloure {
+    escapecloure();
+}
+
+// in below you dont have to manage memory the cloure will be automatically return and it wont be reuseable.
+
+
+func Display (nonescapecloure : () -> ()) {
+    nonescapecloure();
+}
+
+Display {
+    print("Non escape cloure");
+}
 
 ```
 
