@@ -1,19 +1,19 @@
-# #Cloures in depth
+# #Closures in depth
 
 
-I have made some examples for the people who want to learn and understand the cloures in depth. I have gathered information from various resources and tried to make this easy to understand. i have also attached a **playground** so you can test the code.
+I have made some examples for the people who want to learn and understand the Closures in depth. I have gathered information from various resources and tried to make this easy to understand. i have also attached a **playground** so you can test the code.
 
  
 
 # First question which comes into mind What is a cloure?
 
-Modren programming languages have a feature which is called **cloure, block or lambdas**. This feature has a reusable code for self contained unis and it does not have a name. In other languages you call it **lambdas** or **Block** or **Anonymous functions**
-  - What is a cloure
+Modren programming languages have a feature which is called **Closure, block or lambdas**. This feature has a reusable code for self contained unis and it does not have a name. In other languages you call it **lambdas** or **Block** or **Anonymous functions**
+  - What is a Closure
   - How to use it and when to use it?
-  - what is the syntax and different Styles of Cloures?
+  - what is the syntax and different Styles of Closures?
   - What is the difference between a cloure and a function............
-  - Cloures as a reference type?
-  - Special types of cloures.......
+  - Closures as a reference type?
+  - Special types of Closures.......
   - and many more......
 
 #  General sytax in Swift of a Cloure.
@@ -48,7 +48,7 @@ func Display (name : String)
 # Now lets convert above function into a cloure or block or Anonymous function
 Lets remove the keywords **func** and **Display** and take **(name : String)**
 inside curli brackets. So here is our first simple cloure which takes name as a String parameter and returns nothing.... ** But this cloure it self will give error so i have commented into the playground..
-**error will be /../Cloures.playground Trailing closure is separated from call site by multiple newlines But why????????? WTF**
+**error will be /../Closures.playground Trailing closure is separated from call site by multiple newlines But why????????? WTF**
 
 ``` 
 {
@@ -234,7 +234,7 @@ array = array.sorted(by: >)
 
 *** nonscaping cloure tells the compiler to be more aggresive beacause it knows the more information about the cloure lifespan ***
 what it does mean actually?
-in swift 1 and swift 2 the cloures were escaping by default  If you knew your closure wouldn’t escape the function body, you could mark the parameter with the @noescape attribute in swift 1 or swift 2
+in swift 1 and swift 2 the Closures were escaping by default  If you knew your closure wouldn’t escape the function body, you could mark the parameter with the @noescape attribute in swift 1 or swift 2
  in this way we had to write the [weak self] in the cloure which means when cloure is done it should release it from memory.
 
 In Swift 3, it’s the other way around: closure parameters are non-escaping by default. If you intend for it to escape the function, you have to mark it with the @escaping attribute. This means that you dont have to write the [weak self] when writing a cloure.
@@ -464,7 +464,7 @@ array = array.sorted(by: >)
 
 *** nonscaping cloure tells the compiler to be more aggresive beacause it knows the more information about the cloure lifespan ***
 what it does mean actually?
-in swift 1 and swift 2 the cloures were escaping by default  If you knew your closure wouldn’t escape the function body, you could mark the parameter with the @noescape attribute in swift 1 or swift 2
+in swift 1 and swift 2 the Closures were escaping by default  If you knew your closure wouldn’t escape the function body, you could mark the parameter with the @noescape attribute in swift 1 or swift 2
  in this way we had to write the [weak self] in the cloure which means when cloure is done it should release it from memory.
 
 In Swift 3, it’s the other way around: closure parameters are non-escaping by default. If you intend for it to escape the function, you have to mark it with the @escaping attribute. This means that you dont have to write the [weak self] when writing a cloure.
